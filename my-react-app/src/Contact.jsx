@@ -10,6 +10,7 @@ const Contact = () => {
     
     return (
         <>
+            <h2>Contact</h2>
             <div className="input-field">
                 <input type="text" placeholder="Type..." id="name" onBlur={(e) => {
                     e.target.value ? setErrorMessage(''): setErrorMessage('Name required')

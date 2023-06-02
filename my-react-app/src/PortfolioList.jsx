@@ -29,16 +29,16 @@ const PortfolioList = () => {
             gitURL="https://github.com/Derekchili/book-finder-group5"
             />
             <Portfolio 
-            imageURL="./assets/Item Finder.png"
-            projectName="Item Finder"
-            hostURL="https://stark-sands-43742.herokuapp.com/index.html"
-            gitURL="https://github.com/Mrjeffersonm/project-2"
+            imageURL="./assets/Work Day Scheduler.png"
+            projectName="Work Day Scheduler"
+            hostURL="https://mrjeffersonm.github.io/fifth-challenge/"
+            gitURL="https://github.com/Mrjeffersonm/fifth-challenge"
             />
             <Portfolio 
-            imageURL="./assets/Item Finder.png"
-            projectName="Item Finder"
-            hostURL="https://stark-sands-43742.herokuapp.com/index.html"
-            gitURL="https://github.com/Mrjeffersonm/project-2"
+            imageURL="./assets/Quiz.png"
+            projectName="Simple Quiz"
+            hostURL="https://mrjeffersonm.github.io/fourth-challenge/"
+            gitURL="https://github.com/Mrjeffersonm/fourth-challenge"
             />
         </>
     )
