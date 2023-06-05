@@ -2,12 +2,15 @@ import React from "react";
 import './Header.css';
 import Navigation from "./Navigation";
 
-const Header = () => {
+const Header = ({activeContent, setActiveContent}) => {
     return (
-        <>
-            <h1 class="title">Ryan Pratt</h1>
-            <Navigation />
-        </>
+        <div className="header">
+        
+            <h1 className="title">Ryan Pratt</h1>
+            <Navigation
+                activeContent={activeContent}
+                setActiveContent={setActiveContent} />
+        </div>
     )
 };
 

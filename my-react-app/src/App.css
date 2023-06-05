@@ -1,0 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 50px;
+    background-color: #ddcae9;
+}

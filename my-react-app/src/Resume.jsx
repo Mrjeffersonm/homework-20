@@ -3,6 +3,7 @@ import React from "react";
 const Resume = () => {
     return (
         <>
+            <h3>Resume</h3>
             <div className="resume">
                 <a href="./assets/Resume.pdf" download>Download My Resume</a>
                 <li>

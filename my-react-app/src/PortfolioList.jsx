@@ -1,9 +1,11 @@
 import React from "react";
 import Portfolio from "./Portfolio";
+import './PortfolioList.css'
 
 const PortfolioList = () => {
     return (
         <>
+            <h3>Portfolio</h3>
             <Portfolio 
             imageURL="./assets/Weather App.png"
             projectName="Weather Dashboard"

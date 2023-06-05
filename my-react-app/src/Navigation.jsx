@@ -1,13 +1,14 @@
 import React from "react";
+import './Navigation.css';
 
-const Navigation = (props) => {
+const Navigation = ({activeContent, setActiveContent}) => {
     return (
-        <div class="right-menu">
-                <a class="active" href="#abm">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#contact me">Contact Me</a>
-                <a href="#resume">Resume</a>
-            </div>
+        <div className="right-menu">
+            <button className={activeContent === 'about' ? 'active' : 'inactive'} onClick={() => {setActiveContent('about')}}>About Me</button>
+            <button className={activeContent === 'portfolio' ? 'active' : 'inactive'} onClick={() => {setActiveContent('portfolio')}}>Portfolio</button>
+            <button className={activeContent === 'contact' ? 'active' : 'inactive'} onClick={() => {setActiveContent('contact')}}>Contact Me</button>
+            <button className={activeContent === 'resume' ? 'active' : 'inactive'} onClick={() => {setActiveContent('resume')}}>Resume</button>
+        </div>
     )
 };
 

@@ -2,6 +2,20 @@
     display: block;
 }
 
-body {
-    background-color: antiquewhite;
+.hostURL {
+
+}
+
+.gitURL {
+
+}
+
+.portfolio {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.project-name {
+    font-size: large;
 }

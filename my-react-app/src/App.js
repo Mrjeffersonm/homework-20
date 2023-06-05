@@ -1,24 +1,20 @@
 import React from 'react';
-import AboutMe from './AboutMe';
-import Contact from './Contact';
-import PortfolioList from './PortfolioList';
-import Resume from './Resume';
+import Content from './Content';
 import Header from './Header';
 import Footer from './Footer';
+import { useState } from 'react';
+import './App.css';
 
 const App = () => {
+    const [activeContent, setActiveContent] = useState('about');
+
     return (
         <>
-            <Header />
-{/* Move below into Content component */}
-            <div className='centralContent'><AboutMe /></div>
-            
-            <div className='centralContent'><Contact /></div>
-            <h3>Portfolio</h3>
-            <div className='centralContent'><PortfolioList /></div>
-            <h4>Resume</h4>
-            <div className='centralContent'><Resume /></div>
-
+            <Header 
+                activeContent={activeContent}
+                setActiveContent={setActiveContent} />
+            <Content
+                activeContent={activeContent}/>
             <Footer />
         </>
     );
